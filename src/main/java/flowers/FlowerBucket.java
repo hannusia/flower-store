@@ -9,7 +9,7 @@ public class FlowerBucket {
     @Getter @Setter
     List<FlowerPack> flowerPacks = new ArrayList<FlowerPack>();
 
-    public void addFlowerPack(FlowerPack flowerPack) {
+    public void add(FlowerPack flowerPack) {
         flowerPacks.add(flowerPack);
     }
 
