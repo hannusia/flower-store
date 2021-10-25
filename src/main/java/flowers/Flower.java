@@ -12,6 +12,10 @@ public class Flower {
     private int[] color;
     private FlowerType type;
 
+    public Flower(FlowerType flowerType) {
+        this.type = flowerType;
+    }
+
     public void setColor(int[] color) {
         this.color = Arrays.copyOf(color, color.length);
     }
