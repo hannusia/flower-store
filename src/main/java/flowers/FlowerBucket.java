@@ -5,7 +5,7 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FlowerBucket {
+public class FlowerBucket extends Item{
     @Getter @Setter
     List<FlowerPack> flowerPacks = new ArrayList<FlowerPack>();
 
@@ -19,5 +19,15 @@ public class FlowerBucket {
             price += flowerPacks.get(i).price();
         }
         return price;
+    }
+
+    @Override
+    public double getPrice() {
+        return this.price();
+    }
+
+    @Override
+    public String getDescription() {
+        return "Flower Bucket";
     }
 }
