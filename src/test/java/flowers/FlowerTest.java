@@ -1,34 +1,44 @@
 package flowers;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class FlowerTest {
 
-    private Flower flower;
-
-
-    @org.junit.jupiter.api.BeforeEach
-    void setUp() {
-
-        flower = new Flower(FlowerType.Rose);
-        flower.setPrice(346);
-        flower.setColor(new int[]{1,2,3});
-        flower.setSepalLength(3.67);
-
+    @Test
+    void setColor() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
+    void testToString() {
+    }
+
+    @Test
     void getPrice() {
-        assertEquals(346, flower.getPrice());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getSepalLength() {
-        assertEquals(3.67, flower.getSepalLength());
     }
 
-    @org.junit.jupiter.api.Test
-    void getFlowerType() {
-        assertEquals(FlowerType.Rose, flower.getType());
+    @Test
+    void getColor() {
+    }
+
+    @Test
+    void getType() {
+    }
+
+    @Test
+    void setPrice() {
+    }
+
+    @Test
+    void setSepalLength() {
+    }
+
+    @Test
+    void setType() {
     }
 }
