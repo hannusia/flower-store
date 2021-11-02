@@ -2,9 +2,12 @@ package delivery;
 
 import flowers.Item;
 
-public class DHLDeliveryStrategy implements Delivery{
+import java.util.List;
+
+public class DHLDeliveryStrategy implements Delivery {
     @Override
-    public String delivery(Item item){
-        return "DHL delivery is successful!";
+    public boolean deliver(List<Item> items) {
+        System.out.format("Delivered" + items + "by DHLl\n");
+        return true;
     }
 }

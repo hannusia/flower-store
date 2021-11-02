@@ -2,8 +2,8 @@ package delivery;
 
 import flowers.Item;
 
+import java.util.List;
+
 public interface Delivery {
-    default String delivery(Item item){
-        return null;
-    }
+    boolean deliver(List<Item> items);
 }

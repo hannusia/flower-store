@@ -2,9 +2,12 @@ package delivery;
 
 import flowers.Item;
 
-public class PostDeliveryStrategy implements Delivery{
+import java.util.List;
+
+public class PostDeliveryStrategy implements Delivery {
     @Override
-    public String delivery(Item item){
-        return "Post delivery is successfull!";
+    public boolean deliver(List<Item> items) {
+        System.out.println("Delivered" + items + "by post");
+        return true;
     }
 }

@@ -2,7 +2,8 @@ package payment;
 
 public class CreditCardPaymentStrategy implements Payment{
     @Override
-    public String payment(double price){
-        return "Payment with credit card is successful!";
+    public boolean payment(double price){
+        System.out.println("Payment with credit card is successful!");
+        return true;
     }
 }
